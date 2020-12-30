@@ -18,7 +18,7 @@ function Login() {
       const data = await response.json();
       if (data.status === 'success') { 
         sessionStorage.setItem('hasPassedLogin', 'true');
-        navigate('/toggle');
+        navigate('/control-panel');
       } else {
         console.error('Error de inicio de sesión:', data.message);
       }
